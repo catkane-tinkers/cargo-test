@@ -4,7 +4,7 @@ var canvas_width;
 var canvas_height;
 
 var img = new Image();
-img.src = 'https://imgur.com/cqRdtNc';
+img.src = 'https://i.imgur.com/cqRdtNc.png';
 
 console.log('running');
 
