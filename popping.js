@@ -4,7 +4,7 @@ var canvas_width;
 var canvas_height;
 
 var img = new Image();
-img.src = 'https://freight.cargo.site/t/original/i/c6361c78c52d649a439259e925728483c40329ee5b887c2133abd3f1de7cdc77/LOGO.png';
+img.src = 'teehee.png';
 
 console.log('running');
 
