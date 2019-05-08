@@ -4,7 +4,7 @@ var canvas_width;
 var canvas_height;
 
 var img = new Image();
-img.src = 'https://github.com/catkane-tinkers/cargo-test/blob/master/teehee.png';
+img.src = 'https://imgur.com/cqRdtNc';
 
 console.log('running');
 
@@ -39,7 +39,7 @@ function reset() {
 
 	ctx.clearRect(0, 0, canvas_width, canvas_height);
 
-	cvs.style.zIndex = '-1';
+	cvs.style.zIndex = '-100';
 }
 
 function draw() {
