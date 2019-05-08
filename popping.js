@@ -4,7 +4,7 @@ var canvas_width;
 var canvas_height;
 
 var img = new Image();
-img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/1200px-Heart_coraz%C3%B3n.svg.png';
+img.src = 'https://github.com/catkane-tinkers/cargo-test/blob/master/teehee.png';
 
 console.log('running');
 
