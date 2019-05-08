@@ -50,6 +50,7 @@ function draw() {
 		Math.ceil(Math.random() * canvas_width * 0.8 + canvas_width * 0.1),
 		Math.ceil(Math.random() * canvas_height * 0.8 + canvas_height * 0.1)
 	);
+	console.log('drawing');
 }
 
 function rolldice() {
