@@ -8,7 +8,7 @@ img.src = 'https://github.com/catkane-tinkers/cargo-test/blob/master/teehee.png'
 
 console.log('running');
 
-var time_limit = 0;
+var time_limit = 5;
 
 var countdown = 0;
 var timer = setInterval(checker, 1000);
@@ -43,7 +43,7 @@ function reset() {
 }
 
 function draw() {
-	cvs.style.zIndex = '1';
+	cvs.style.zIndex = '100';
 	ctx.beginPath();
 	ctx.drawImage(
 		img,
