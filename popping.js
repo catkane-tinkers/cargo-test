@@ -53,8 +53,8 @@ function draw() {
 			img,
 			Math.ceil(Math.random() * canvas_width * 0.8 + canvas_width * 0.1),
 			Math.ceil(Math.random() * canvas_height * 0.8 + canvas_height * 0.1),
-			width=80,
-			height=80
+			width=50,
+			height=50
 		);
 		number_drawn += 1;
 	}
