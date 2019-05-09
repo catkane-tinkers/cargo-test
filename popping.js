@@ -6,8 +6,6 @@ var canvas_height;
 var img = new Image();
 img.src = 'https://i.imgur.com/cqRdtNc.png';
 
-console.log('running');
-
 var time_limit = 5;
 
 var countdown = 0;
@@ -46,7 +44,7 @@ function reset() {
 }
 
 function draw() {
-	if (number_drawn < 20) {
+	if (number_drawn < 10) {
 		cvs.style.zIndex = '100';
 		ctx.beginPath();
 		ctx.drawImage(
