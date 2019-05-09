@@ -8,7 +8,7 @@ img.src = 'https://i.imgur.com/cqRdtNc.png';
 
 console.log('running');
 
-var time_limit = 5;
+var time_limit = 30;
 
 var countdown = 0;
 var timer = setInterval(checker, 1000);
@@ -18,6 +18,8 @@ var drawloop = setInterval(loop, 1000);
 var drawing;
 
 var events = [ 'mousemove', 'mousedown', 'mouseup' ];
+
+var number_drawn = 0;
 
 events.forEach(function(element) {
 	window.addEventListener(element, reset);
@@ -40,23 +42,26 @@ function reset() {
 	ctx.clearRect(0, 0, canvas_width, canvas_height);
 
 	cvs.style.zIndex = '-100';
+	number_drawn = 0;
 }
 
 function draw() {
-	cvs.style.zIndex = '100';
-	ctx.beginPath();
-	ctx.drawImage(
-		img,
-		Math.ceil(Math.random() * canvas_width * 0.8 + canvas_width * 0.1),
-		Math.ceil(Math.random() * canvas_height * 0.8 + canvas_height * 0.1),
-		width=100,
-		height=100
-	);
-	console.log('drawing');
+	if (number_drawn < 20) {
+		cvs.style.zIndex = '100';
+		ctx.beginPath();
+		ctx.drawImage(
+			img,
+			Math.ceil(Math.random() * canvas_width * 0.8 + canvas_width * 0.1),
+			Math.ceil(Math.random() * canvas_height * 0.8 + canvas_height * 0.1),
+			width=100,
+			height=100
+		);
+		number_drawn += 1;
+	}
 }
 
 function rolldice() {
-	return Math.ceil(Math.random() * 15);
+	return Math.ceil(Math.random() * 20);
 }
 
 function checker() {
