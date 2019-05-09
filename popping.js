@@ -8,7 +8,7 @@ img.src = 'https://i.imgur.com/cqRdtNc.png';
 
 console.log('running');
 
-var time_limit = 30;
+var time_limit = 5;
 
 var countdown = 0;
 var timer = setInterval(checker, 1000);
