@@ -6,7 +6,7 @@ var canvas_height;
 var img = new Image();
 img.src = 'https://i.imgur.com/cqRdtNc.png';
 
-var time_limit = 30;
+var time_limit = 45;
 
 var countdown = 0;
 var timer = setInterval(checker, 1000);
